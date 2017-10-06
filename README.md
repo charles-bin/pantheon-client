@@ -11,7 +11,7 @@ Methods
 GET | POST | PUT | DELETE  
 
 Data Params  
- {
+ {  
  	"title": [string],  
  	"image": [string],  
  	"description": [string],  
