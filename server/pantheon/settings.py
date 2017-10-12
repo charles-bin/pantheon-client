@@ -26,7 +26,9 @@ SECRET_KEY = '!mt!hx*@kj1*54s-@)&*s@1az43v3__zz3_-(26c1_%p33!57f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'pantheon-server.herokuapp.com']
+ALLOWED_HOSTS = ['localhost',
+                 'pantheon-server.herokuapp.com',
+                 'shrouded-fortress-63254.herokuapp.com', ]
 
 
 # Application definition
