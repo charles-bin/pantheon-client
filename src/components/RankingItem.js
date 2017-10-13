@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ListGroupItem, Image, Button, Glyphicon, Row, Col } from 'react-bootstrap'
+import { Image, Glyphicon, Row, Col } from 'react-bootstrap'
 
 const centerChildren = {
   display: "flex",
