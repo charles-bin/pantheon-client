@@ -1,4 +1,1 @@
-*.pyc
-*.sqlite3
-server/ranker/migrations/*
-/venv/
+/node_modules/
