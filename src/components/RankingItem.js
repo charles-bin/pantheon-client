@@ -26,19 +26,20 @@ export default function RankingItem(props) {
       onClick={() => {}}>
       <Row style={centerChildren}>
         <Col
-          xs={3} xsOffset={0}
-          sm={3} smOffset={0}
-          md={3} mdOffset={0}
-          lg={3} lgOffset={0}>
+          xs={2} xsOffset={0}
+          sm={2} smOffset={0}
+          md={2} mdOffset={0}
+          lg={2} lgOffset={0}>
           <Image alt={item.title} src={item.image} responsive />
         </Col>
         <Col
-          xs={8} xsOffset={0}
-          sm={8} smOffset={0}
-          md={8} mdOffset={0}
-          lg={8} lgOffset={0}>
-          <h4>{item.rank} - {item.title}</h4>
+          xs={9} xsOffset={0}
+          sm={9} smOffset={0}
+          md={9} mdOffset={0}
+          lg={9} lgOffset={0}>
+          <h3 style={{fontWeight: "400"}}>{item.rank} - {item.title}</h3>
           <p>{item.developer} - {item.genre}</p>
+          <p>Release Date: {item.published}</p>
           <p>{item.description}</p>
         </Col>
         <Col

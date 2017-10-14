@@ -7,8 +7,8 @@ import {
   updateItem
 } from '../actions'
 import { Grid, Row, Col } from 'react-bootstrap'
+import CustomNavbar from '../components/CustomNavbar'
 import Ranking from '../components/Ranking'
-import Search from '../components/Search'
 
 class App extends Component {
 
@@ -25,23 +25,13 @@ class App extends Component {
 
     return (
       <div className="App">
+        <CustomNavbar/>
         <Grid fluid>
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Pantheon</h1>
-          </header>
-          <Col style={{paddingBottom: "20px"}}
-            xs={6} xsOffset={3}
-            sm={6} smOffset={3}
-            md={6} mdOffset={3}
-            lg={6} lgOffset={3}>
-            <Search />
-          </Col>
           <Col
-            xs={8} xsOffset={2}
-            sm={8} smOffset={2}
-            md={8} mdOffset={2}
-            lg={8} lgOffset={2}>
+            xs={10} xsOffset={1}
+            sm={10} smOffset={1}
+            md={10} mdOffset={1}
+            lg={10} lgOffset={1}>
             <Ranking items={ items }/>
           </Col>
         </Grid>
