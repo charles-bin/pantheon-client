@@ -9,6 +9,7 @@ import {
 import { Grid, Row, Col } from 'react-bootstrap'
 import CustomNavbar from '../components/CustomNavbar'
 import Ranking from '../components/Ranking'
+import Loading from '../components/Loading'
 
 class App extends Component {
 
@@ -32,7 +33,7 @@ class App extends Component {
             sm={10} smOffset={1}
             md={10} mdOffset={1}
             lg={10} lgOffset={1}>
-            <Ranking items={ items }/>
+            { isFetching ? <Loading /> : <Ranking items={ items } /> }
           </Col>
         </Grid>
       </div>
